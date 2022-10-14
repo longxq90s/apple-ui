@@ -1,0 +1,30 @@
+{
+  "name": "shell-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "prettier --write .",
+    "lint": "eslint --ext .ts packages/*/**.ts",
+    "lint:fix": "eslint --ext .ts packages/*/**.ts --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "lint-staged": {
+    "packages/**/*.{vue,js,ts,jsx,tsx,md,json}": "prettier --write ."
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
+    "eslint": "^8.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "sass": "^1.55.0",
+    "typescript": "^4.8.4",
+    "vue": "^3.2.36"
+  }
+}
